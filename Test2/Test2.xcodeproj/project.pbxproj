@@ -6,6 +6,13 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1CA920F41B97656B00C35573 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA920F31B97656B00C35573 /* OpenGL.framework */; };
+		1CA920F61B97657400C35573 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA920F51B97657400C35573 /* GLUT.framework */; };
+		1CA920FF1B97662200C35573 /* example1.cp in Sources */ = {isa = PBXBuildFile; fileRef = 1CA920F91B97662200C35573 /* example1.cp */; };
+		1CA921001B97662200C35573 /* InitShader.cp in Sources */ = {isa = PBXBuildFile; fileRef = 1CA920FB1B97662200C35573 /* InitShader.cp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		1CA920E61B97645200C35573 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,7 +27,16 @@
 
 /* Begin PBXFileReference section */
 		1CA920E81B97645200C35573 /* Test2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test2; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CA920F21B97646100C35573 /* test2source */ = {isa = PBXFileReference; lastKnownFileType = folder; name = test2source; path = ../../test2source; sourceTree = "<group>"; };
+		1CA920F31B97656B00C35573 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		1CA920F51B97657400C35573 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		1CA920F71B97662200C35573 /* Angel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Angel.h; path = ../../test2source/Angel.h; sourceTree = "<group>"; };
+		1CA920F81B97662200C35573 /* CheckError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CheckError.h; path = ../../test2source/CheckError.h; sourceTree = "<group>"; };
+		1CA920F91B97662200C35573 /* example1.cp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = example1.cp; path = ../../test2source/example1.cp; sourceTree = "<group>"; };
+		1CA920FA1B97662200C35573 /* fshader31.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fshader31.glsl; path = ../../test2source/fshader31.glsl; sourceTree = "<group>"; };
+		1CA920FB1B97662200C35573 /* InitShader.cp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InitShader.cp; path = ../../test2source/InitShader.cp; sourceTree = "<group>"; };
+		1CA920FC1B97662200C35573 /* mat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mat.h; path = ../../test2source/mat.h; sourceTree = "<group>"; };
+		1CA920FD1B97662200C35573 /* vec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vec.h; path = ../../test2source/vec.h; sourceTree = "<group>"; };
+		1CA920FE1B97662200C35573 /* vshader31.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vshader31.glsl; path = ../../test2source/vshader31.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA920F61B97657400C35573 /* GLUT.framework in Frameworks */,
+				1CA920F41B97656B00C35573 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +55,8 @@
 		1CA920DF1B97645200C35573 = {
 			isa = PBXGroup;
 			children = (
+				1CA920F51B97657400C35573 /* GLUT.framework */,
+				1CA920F31B97656B00C35573 /* OpenGL.framework */,
 				1CA920EA1B97645200C35573 /* Test2 */,
 				1CA920E91B97645200C35573 /* Products */,
 			);
@@ -53,7 +73,14 @@
 		1CA920EA1B97645200C35573 /* Test2 */ = {
 			isa = PBXGroup;
 			children = (
-				1CA920F21B97646100C35573 /* test2source */,
+				1CA920F71B97662200C35573 /* Angel.h */,
+				1CA920F81B97662200C35573 /* CheckError.h */,
+				1CA920F91B97662200C35573 /* example1.cp */,
+				1CA920FA1B97662200C35573 /* fshader31.glsl */,
+				1CA920FB1B97662200C35573 /* InitShader.cp */,
+				1CA920FC1B97662200C35573 /* mat.h */,
+				1CA920FD1B97662200C35573 /* vec.h */,
+				1CA920FE1B97662200C35573 /* vshader31.glsl */,
 			);
 			path = Test2;
 			sourceTree = "<group>";
@@ -114,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA920FF1B97662200C35573 /* example1.cp in Sources */,
+				1CA921001B97662200C35573 /* InitShader.cp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,10 +173,6 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
